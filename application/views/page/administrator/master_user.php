@@ -120,6 +120,21 @@
                                                                         </div>
                                                                     </td>
                                                                 </tr>
+                                                                <tr>
+                                                                    <td>201911020001</td>
+                                                                    <td>Hilman Fadillah</td>
+                                                                    <td>hilmanf11</td>
+                                                                    <td>********</td>
+                                                                    <td>Subcount</td>
+                                                                    <td>Aktif</td>
+                                                                    <td>
+                                                                        <div class="table-actions">
+                                                                            
+                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
+                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -142,21 +157,18 @@
       status = $('#status').val();
      
       $.post('<?php echo site_url('User');?>/new_user',{ 'fullname' : full_name, 'username' : username, 'password' : password, 'hak_akses' : hak_akses, 'Status' : status},
-                  function(data){ 
-                    console.log(data);
+        function(data){ 
+        console.log(data);
 
-                    if(data == 1){
-                      alert('User Berhasil ditambah');
-                      location.reload();
-                    }else{
-                      alert('User Gagal ditambah');
-                      location.reload();
+        if(data == 1){
+            alert('User Berhasil ditambah');
+            location.reload();
+        }else{
+            alert('User Gagal ditambah');
+            location.reload();
 
-                    }
-
-                    
-
-                 });
+        }
+        });
     
     }
 </script>
