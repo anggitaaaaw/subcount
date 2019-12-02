@@ -168,264 +168,27 @@
                                         <div class="col-md-12">
                                             <div class="card" style="min-height: 484px;">
                                                 <div class="card-body">
-                                                    <button class="btn btn-primary mr-2" data-toggle="modal" data-target="#demoModal"><i class="ik ik-plus"></i>New Data</button>
+                                                    <button class="btn btn-primary mr-2" data-toggle="modal" data-target="#demoModal"><i class="ik ik-plus"></i>Label Batch</button>
+                                                    <!--
                                                     <button data-toggle="modal" data-target="#modal_printlabel" class="btn btn-primary mr-2"><i class="ik ik-printer"></i>Cetak Label</button>
                                                     <button data-toggle="modal" data-target="#modal_printsj" class="btn btn-primary mr-2"><i class="ik ik-printer"></i>Cetak SJ</button>
+                                                    -->
                                                     <br><br><br>
                                                     <div class="dt-responsive">
-                                                        <table id="simpletable" class="table table-striped table-bordered nowrap">
+                                                        <table id="create_label_batch" class="table table-striped table-bordered nowrap">
                                                             <thead>
                                                                 <tr>
                                                                     <th>SPK No</th>
-                                                                    <th>LPP No</th>
-                                                                    <th>Product No</th>
-                                                                    <th>Product Name</th>
+                                                                    <th>Batch No</th>
+                                                                    <th>Item Code</th>
+                                                                    <th>Description</th>
+                                                                    <th>UoM</th>
                                                                     <th>Heat No</th>
-                                                                    <th>Qty Packing</th>
-                                                                    <th>Di Buat</th>
-                                                                    <th>Tgl Pembuatan</th>
+                                                                    <th>Create By</th>
+                                                                    <th>Create Date</th>
                                                                     <th width="20">Action</th>
                                                                 </tr>
                                                             </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr><tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>105222000689220</td>
-                                                                    <td>20195520033</td>
-                                                                    <td>0112</td>
-                                                                    <td>Lorem Ipsum</td>
-                                                                    <td>2838001</td>
-                                                                    <td>3000</td>
-                                                                    <td>Michael</td>
-                                                                    <td>2011/04/25</td>
-                                                                    <td>
-                                                                        <div class="table-actions">
-                                                                            
-                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
-                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
