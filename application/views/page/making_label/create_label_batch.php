@@ -20,7 +20,7 @@
                                                         <li class="breadcrumb-item">
                                                             <a href="../index.html"><i class="ik ik-home"></i></a>
                                                         </li>
-                                                        <li class="breadcrumb-item"><a href="#">Making Labels</a></li>
+                                                        <li class="breadcrumb-item"><a href="#">Create Label Batch</a></li>
                                                     </ol>
                                                 </nav>
                                             </div>
@@ -30,84 +30,88 @@
                                     <!-- New Data -->
                                     <div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
+                                            <div class="modal-content" style="width: 1260px;">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="demoModalLabel">New Data</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
                                                 <form class="forms-sample">
-                                                    <div class="modal-body">
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">SPK NO</label>
-                                                            <div class="col-sm-8">
-                                                                <select class="form-control select2">
-                                                                    <option value="cheese">SPK NO</option>
-                                                                </select>
+                                                    <div class="modal-body row">
+                                                        <fieldset style="border: 1px solid gray; padding: 10px;" class="col-sm-6">
+                                                            <div class="form-group row" style="margin: 1px;">
+                                                                <label class="col-sm-3 col-form-label">SPK NO</label>
+                                                                <div class="col-sm-8">
+                                                                    <select class="form-control select2">
+                                                                        <option value="cheese">SPK NO</option>
+                                                                    </select>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Product No</label>
-                                                            <div class="col-sm-8">
-                                                                <input type="email" class="form-control" id="product_no">
+                                                            <div class="form-group row" style="margin: 1px;">
+                                                                <label class="col-sm-3 col-form-label">Product No</label>
+                                                                <div class="col-sm-8">
+                                                                    <input type="email" class="form-control" id="product_no">
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Product Name</label>
-                                                            <div class="col-sm-8">
-                                                                <input type="text" class="form-control" id="product_name">
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">Product Name</label>
+                                                                <div class="col-sm-8">
+                                                                    <input type="text" class="form-control" id="product_name">
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Tanggal</label>
-                                                            <div class="col-sm-4">
-                                                                <input type="text"  class="form-control datetimepicker-input" id="datepicker" data-toggle="datetimepicker" data-target="#datepicker" placeholder="Tanggal Mulai">
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">Tanggal</label>
+                                                                <div class="col-sm-4">
+                                                                    <input type="text"  class="form-control datetimepicker-input" id="datepicker" data-toggle="datetimepicker" data-target="#datepicker" placeholder="Tanggal Mulai">
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <input type="text" class="form-control datetimepicker-input" id="datepicker2" data-toggle="datetimepicker" data-target="#datepicker2" placeholder="Tanggal Selesai">
+                                                                </div>
                                                             </div>
-                                                            <div class="col-sm-4">
-                                                                <input type="text" class="form-control datetimepicker-input" id="datepicker2" data-toggle="datetimepicker" data-target="#datepicker2" placeholder="Tanggal Selesai">
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">Heat No</label>
+                                                                <div class="col-sm-4">
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <input type="text" class="form-control" placeholder="Batch QTY">
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Heat No</label>
-                                                            <div class="col-sm-4">
-                                                                <input type="text" class="form-control">
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">Vendor ID</label>
+                                                                <div class="col-sm-8">
+                                                                    <select class="form-control select2">
+                                                                        <option value="cheese">Vendor ID</option>
+                                                                    </select>
+                                                                </div>
                                                             </div>
-                                                            <div class="col-sm-4">
-                                                                <input type="text" class="form-control" placeholder="Batch QTY">
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">LPP Status</label>
+                                                                <div class="col-sm-4">
+                                                                    <select class="form-control select2">
+                                                                        <option value="cheese">Complete</option>
+                                                                        <option value="cheese">Uncomplete</option>
+                                                                    </select>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Vendor ID</label>
-                                                            <div class="col-sm-8">
-                                                                <select class="form-control select2">
-                                                                    <option value="cheese">Vendor ID</option>
-                                                                </select>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-3 col-form-label">LPP No</label>
+                                                                <div class="col-sm-4">
+                                                                    <select class="form-control select2">
+                                                                        <option value="cheese">Complete</option>
+                                                                        <option value="cheese">Uncomplete</option>
+                                                                    </select>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">LPP Status</label>
-                                                            <div class="col-sm-4">
-                                                                <select class="form-control select2">
-                                                                    <option value="cheese">Complete</option>
-                                                                    <option value="cheese">Uncomplete</option>
-                                                                </select>
+                                                            <div class="form-group row">
+                                                                <label for="exampleInputMobile" class="col-sm-3 col-form-label">Qty Packing</label>
+                                                                <div class="col-sm-4">
+                                                                    <input type="number" class="form-control" id="product_name">
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">LPP No</label>
-                                                            <div class="col-sm-4">
-                                                                <select class="form-control select2">
-                                                                    <option value="cheese">Complete</option>
-                                                                    <option value="cheese">Uncomplete</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label for="exampleInputMobile" class="col-sm-3 col-form-label">Qty Packing</label>
-                                                            <div class="col-sm-4">
-                                                                <input type="number" class="form-control" id="product_name">
-                                                            </div>
-                                                        </div>
-                                                    
+                                                        </fieldset>
+                                                        <fieldset style="border: 1px solid gray; padding: 10px;" class="col-sm-4">
+
+                                                        </fieldset>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-primary">Simpan</button>
@@ -168,7 +172,7 @@
                                         <div class="col-md-12">
                                             <div class="card" style="min-height: 484px;">
                                                 <div class="card-body">
-                                                    <button class="btn btn-primary mr-2" data-toggle="modal" data-target="#demoModal"><i class="ik ik-plus"></i>Label Batch</button>
+                                                    <a class="btn btn-primary mr-2" href="<?php echo site_url('welcome/create_label_batch_input') ?>"><i class="ik ik-plus"></i>Label Batch</a>
                                                     <!--
                                                     <button data-toggle="modal" data-target="#modal_printlabel" class="btn btn-primary mr-2"><i class="ik ik-printer"></i>Cetak Label</button>
                                                     <button data-toggle="modal" data-target="#modal_printsj" class="btn btn-primary mr-2"><i class="ik ik-printer"></i>Cetak SJ</button>
@@ -182,8 +186,8 @@
                                                                     <th>Batch No</th>
                                                                     <th>Item Code</th>
                                                                     <th>Description</th>
-                                                                    <th>UoM</th>
                                                                     <th>Heat No</th>
+                                                                    <th>UoM</th>
                                                                     <th>Create By</th>
                                                                     <th>Create Date</th>
                                                                     <th width="20">Action</th>

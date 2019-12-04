@@ -4,14 +4,12 @@ function format ( d ) {
                 '<thead>'+
                     '<tr>'+
                         '<th>LPP No</th>'+
-                        '<th>Heat No</th>'+
                         '<th>Qty</th>'+
                     '</tr>'+
                 '</thead>'+
                 '<tbody>'+
                     '<tr>'+
                         '<td>1233</td>'+
-                        '<td>123</td>'+
                         '<td>123333</td>'+
                     '</tr>'+
                 '</tbody>'+
@@ -34,8 +32,8 @@ $(document).ready(function() {
             { "data": "batch_no" },
             { "data": "item_code" },
             { "data": "desc" },
-            { "data": "uom" },
             { "data": "heatno" },
+            { "data": "uom" },
             { "data": "cuser" },
             { "data": "cdate" }
         ],
