@@ -90,13 +90,23 @@
                                 </div>
                                 <div class="nav-item">
                                     <a href="<?php echo site_url('welcome/create_label_batch') ?>" class="menu-item"><i class="ik ik-file-text"></i>Create Label Batch</a>
-                                    <a href="<?php echo site_url('welcome/receiving_disubcount') ?>" class="menu-item"><i class="ik ik-file-text"></i>Receiving Subcount</a>
                                     <a href="<?php echo site_url('welcome/delivery_note') ?>" class="menu-item"><i class="ik ik-file-text"></i>Delivery Note</a>
-                                    <a href="#" class="menu-item"><i class="ik ik-file-text"></i>Vendor Receiving</a>
-                                    <a href="#" class="menu-item"><i class="ik ik-file-text"></i>Delivery Historical Report</a>
-                                    <a href="#" class="menu-item"><i class="ik ik-printer"></i>Print BST</a>
+                                    <a href="<?php echo site_url('welcome/receiving_disubcount') ?>" class="menu-item"><i class="ik ik-file-text"></i>Vendor Receiving</a>
                                 </div>
-                                
+                                <div class="nav-item has-sub">
+                                    <a><i class="ik ik-file-text"></i>Vendor Delivery</a>
+                                    <div class="submenu-content">
+                                        <a href="#" class="menu-item"><i class="ik ik-printer"></i>Print Label Batch</a>
+                                        <a href="#" class="menu-item"><i class="ik ik-list"></i>Packing List</a>
+                                    </div>
+                                </div>
+                                <div class="nav-item has-sub">
+                                    <a><i class="ik ik-file-text"></i>Incoming WIP</a>
+                                    <div class="submenu-content">
+                                        <a href="#" class="menu-item"><i class="ik ik-printer"></i>Print Label Packing</a>
+                                        <a href="#" class="menu-item"><i class="ik ik-printer"></i>Print BST</a>
+                                    </div>
+                                </div>
                             </nav>
                         </div>
                     </div>

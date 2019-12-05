@@ -44,6 +44,13 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function create_label_batch_input(){
+		$this->load->helper('url');
+		$this->load->view('header');
+		$this->load->view('page/making_label/create_label_batch_input');
+		$this->load->view('footer');
+	}
+
 	public function receiving_disubcount(){
 		$this->load->helper('url');
 		$this->load->view('header');
