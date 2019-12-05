@@ -26,12 +26,16 @@
 */
 $config['mongo_db']['active'] = 'default';
 $config['mongo_db']['default']['no_auth'] = true;
-//$config['mongo_db']['default']['hostname'] = 'cluster0-shard-00-02-ugmo7.azure.mongodb.net';
+
+//$config['mongo_db']['default']['hostname'] = 'cluster0-shard-00-02-ugmo7.azure.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority';
 $config['mongo_db']['default']['hostname'] = 'localhost';
 $config['mongo_db']['default']['port'] = '27017';
+//$config['mongo_db']['default']['username'] = 'root_anggita';
+//$config['mongo_db']['default']['password'] = 'Anggita5';
 $config['mongo_db']['default']['username'] = '';
 $config['mongo_db']['default']['password'] = '';
 $config['mongo_db']['default']['database'] = 'db_test';
+$config['mongo_db']['default']['database'] = 'subcount';
 $config['mongo_db']['default']['db_debug'] = TRUE;
 $config['mongo_db']['default']['return_as'] = 'array';
 $config['mongo_db']['default']['write_concerns'] = (int)1;

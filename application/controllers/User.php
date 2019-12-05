@@ -47,8 +47,15 @@ class User extends CI_Controller {
     $data['password'] = $this->input->post('password');
     $data['hak_akses'] = $this->input->post('hak_akses');
     $data['status'] = $this->input->post('status');
-    $this->mongo_db->insert('db_test', $data);
+    $this->mongo_db->insert('tb_user', $data);
     echo "1";
+  }
+
+    public function viewuser(){
+    $this->load->model("usersmodel");
+    $user = $this->usersmodel->viewUsers();
+    echo json_encode($user);
+
   }
 
 }
