@@ -534,6 +534,12 @@ $(document).ready(function() {
         "info":     true,
         "searching": true
     });
+    $('#simpletable4').DataTable({
+        "paging":   false,
+        "ordering": false,
+        "info":     true,
+        "searching": true
+    });
 
     $('#order-table').DataTable({
         "order": [

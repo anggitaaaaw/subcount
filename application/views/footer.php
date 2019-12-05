@@ -14,7 +14,7 @@
         <script src="<?php echo base_url() ?>assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="<?php echo base_url() ?>assets/plugins/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
         <script src="<?php echo base_url() ?>assets/plugins/screenfull/dist/screenfull.js"></script>
-        <script src="<?php echo base_url() ?>assets/js/datatables.js?x"></script>
+        <script src="<?php echo base_url() ?>assets/js/datatables.js?ss"></script>
         <script src="<?php echo base_url() ?>assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
         <script src="<?php echo base_url() ?>assets/plugins/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
         <script src="<?php echo base_url() ?>assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
@@ -37,8 +37,9 @@
         <script src="<?php echo base_url() ?>assets/js/form-picker.js"></script>
 
         <!-- Datatables Javascript -->
-        <script src="<?php echo base_url() ?>javascript_data/receiving_disubcount.js"></script>
+        <script src="<?php echo base_url() ?>javascript_data/receiving_disubcount.js?zxc"></script>
         <script src="<?php echo base_url() ?>javascript_data/create_label_batch.js?s"></script>
+        <script src="<?php echo base_url() ?>javascript_data/delivery_note.js"></script>
         <script>
             $(document).ready(function() {
                 $('#print_sj').click(function() {
