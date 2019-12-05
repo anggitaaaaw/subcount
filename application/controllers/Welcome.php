@@ -21,11 +21,25 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	//MODUL MASTER USER
+	//MODUL ADMINISTRATOR
 	public function adm_master_user(){
 		$this->load->helper('url');
 		$this->load->view('header');
 		$this->load->view('page/administrator/master_user');
+		$this->load->view('footer');
+	}
+
+	public function adm_setting_menu(){
+		$this->load->helper('url');
+		$this->load->view('header');
+		$this->load->view('page/administrator/setting_menu');
+		$this->load->view('footer');
+	}
+
+	public function adm_setting_user(){
+		$this->load->helper('url');
+		$this->load->view('header');
+		$this->load->view('page/administrator/setting_user');
 		$this->load->view('footer');
 	}
 

@@ -84,6 +84,8 @@
                                 <div class="nav-item has-sub">
                                     <a><i class="ik ik-settings"></i><span>Administrator</span></a>
                                     <div class="submenu-content">
+                                        <a href="<?php echo site_url('welcome/adm_setting_menu') ?>" class="menu-item"><i class="ik ik-file-text"></i>Setting menu</a>
+                                        <a href="<?php echo site_url('welcome/adm_setting_user') ?>" class="menu-item"><i class="ik ik-users"></i>Setting User</a>
                                         <a href="<?php echo site_url('welcome/adm_master_user') ?>" class="menu-item"><i class="ik ik-user"></i>Master User</a>
                                         <a href="<?php echo site_url('welcome/adm_historical_akses') ?>" class="menu-item"><i class="ik ik-users"></i>Historical Access</a>
                                     </div>

@@ -27,31 +27,54 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- Create Delivery Note -->
+                                    <div class="modal fade" id="md_delivery_note" tabindex="-1" role="dialog" aria-labelledby="demoModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content" style="width: 1000px;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="demoModalLabel">Print Label</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                </div>
+                                                <form class="forms-sample">
+                                                    <div class="modal-body">
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" id="print_label" class="btn btn-primary">Print</button>
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                     
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="card" style="min-height: 484px;">
                                                 <div class="card-body">
                                                     <div class="form-group row">
-                                                        <label class="col-sm-1 col-form-label">Status Delivery</label>
+                                                        <div class="col-sm-5">
+                                                            <button data-toggle="modal" data-target="#md_delivery_note" class="btn btn-primary mr-2"><i class="ik ik-plus"></i>Create Delivery Note</button>
+                                                        </div>
+                                                        <label class="col-sm-1 col-form-label">Search By</label>
                                                         <div class="col-sm-2">
                                                             <select class="form-control select2">
+                                                                <option value="">-Status Delivery-</option>
                                                                 <option value="all">All</option>
                                                                 <option value="open">Open</option>
                                                                 <option value="close">Close</option>
                                                                 <option value="late">Late</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-sm-3"></div>
-                                                        <label class="col-sm-1 col-form-label">Search By</label>
-                                                        <div class="col-sm-2">
+                                                        <div class="col-sm-1">
                                                             <select class="form-control select2">
                                                                 <option value="dn_no">DN No</option>
                                                                 <option value="product_no">Product No</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-sm-2">
-                                                            <input type="text" class="form-control" id="search_by">
+                                                            <input type="text" class="form-control" placeholder="What are you looking for" id="search_by">
                                                         </div>
                                                         <div class="col-sm-1">
                                                             <button type="submit" class="btn btn-primary mr-2"><i class="ik ik-search"></i>Find</button>
@@ -312,8 +335,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <button type="submit" class="btn btn-primary mr-2"><i class="ik ik-check"></i>Receive</button>
-                                                        <button type="submit" class="btn btn-primary mr-2"><i class="ik ik-x"></i>Reject</button>
                                                     </div>
                                                 </div>
                                             </div>

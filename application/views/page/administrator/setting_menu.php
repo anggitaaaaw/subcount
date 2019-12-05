@@ -7,9 +7,9 @@
                                         <div class="row align-items-end">
                                             <div class="col-lg-8">
                                                 <div class="page-header-title">
-                                                    <i class="ik ik-users bg-blue"></i>
+                                                    <i class="ik ik-settings bg-blue"></i>
                                                     <div class="d-inline">
-                                                        <h5>Master User</h5>
+                                                        <h5>Setting Menu</h5>
                                                         <span>Please enter data completely and correctly</span>
                                                     </div>
                                                 </div>
@@ -21,7 +21,7 @@
                                                             <a href="../index.html"><i class="ik ik-home"></i></a>
                                                         </li>
                                                         <li class="breadcrumb-item"><a href="#">Administrator</a></li>
-                                                        <li class="breadcrumb-item active"><a href="#">Master User</a></li>
+                                                        <li class="breadcrumb-item active"><a href="#">Setting Menu</a></li>
                                                     </ol>
                                                 </nav>
                                             </div>
@@ -39,61 +39,42 @@
                                                 <form class="forms-sample">
                                                     <div class="modal-body">
                                                         <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">NIK <i style="color: red;">*</i></label>
-                                                            <div class="col-sm-8">
-                                                                <input type="text" required class="form-control" id="nik" name="nik">
+                                                            <label class="col-sm-3 col-form-label">ID Menu <i style="color: red;">*</i></label>
+                                                            <div class="col-sm-4">
+                                                                <input type="number" required class="form-control" id="id_menu" name="id_menu">
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Full Name <i style="color: red;">*</i></label>
+                                                            <label class="col-sm-3 col-form-label">Parent Menu <i style="color: red;">*</i></label>
                                                             <div class="col-sm-8">
-                                                                <input type="text" required class="form-control" id="full_name" name="full_name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Username <i style="color: red;">*</i></label>
-                                                            <div class="col-sm-8">
-                                                            <input type="text" required class="form-control" id="username" name="username">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Password <i style="color: red;">*</i></label>
-                                                            <div class="col-sm-8">
-                                                            <input type="password" required class="form-control" id="password" name="password">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Position</label>
-                                                            <div class="col-sm-8">
-                                                                <select class="form-control select2" id="position" name="position">
-                                                                    <option value="administrator">Administrator</option>
-                                                                    <option value="spv">Supervisor</option>
-                                                                    <option value="staff">Staff</option>
-                                                                    <option value="operator">Operator</option>
+                                                                <select class="form-control select2" id="parent_menu" name="parent_menu">
+                                                                    <option value="10001">Dashboard</option>
+                                                                    <option value="10002">Administrator</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Group</label>
+                                                            <label class="col-sm-3 col-form-label">Menu Name <i style="color: red;">*</i></label>
                                                             <div class="col-sm-8">
-                                                                <select class="form-control select2" id="group" name="group">
-                                                                    <option value="indoseiki">Indoseiki</option>
-                                                                    <option value="subcount">Subcount</option>
-                                                                </select>
+                                                                <input type="text" required class="form-control" id="menu_name" name="menu_name">
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <label class="col-sm-3 col-form-label">Status </label>
+                                                            <label class="col-sm-3 col-form-label">Link <i style="color: red;">*</i></label>
                                                             <div class="col-sm-8">
-                                                                <select class="form-control select2" id="status" name="status">
-                                                                    <option value="aktif">Aktif</option>
-                                                                    <option value="tidak_aktif">Tidak Aktif</option>
-                                                                </select>
+                                                                <input type="text" required class="form-control" id="link" name="link">
                                                             </div>
                                                         </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-3 col-form-label">Order Number</label>
+                                                            <div class="col-sm-4">
+                                                                <input type="number" class="form-control" id="order_number" name="order_number">
+                                                            </div>
+                                                        </div>
+                                                    
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" onclick="new_user()">Simpan</button>
+                                                        <button type="button" class="btn btn-primary" onclick="new_menu()">Simpan</button>
                                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                                     </div>
                                                 </form>
@@ -111,25 +92,21 @@
                                                         <table id="simpletable" class="table table-striped table-bordered nowrap">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>NIK</th>
-                                                                    <th>Full Name</th>
-                                                                    <th>Username</th>
-                                                                    <th>Password</th>
-                                                                    <th>Position</th>
-                                                                    <th>Group</th>
-                                                                    <th>Status</th>
+                                                                    <th>ID Menu</th>
+                                                                    <th>Parent Menu</th>
+                                                                    <th>Menu Name</th>
+                                                                    <th>Link</th>
+                                                                    <th>Order Number</th>
                                                                     <th width="20">Action</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>201911020001</td>
-                                                                    <td>Hilman Fadillah</td>
-                                                                    <td>hilmanf11</td>
-                                                                    <td>********</td>
-                                                                    <td>Staff</td>
-                                                                    <td>Indoseiki</td>
-                                                                    <td>Aktif</td>
+                                                                    <td>10001</td>
+                                                                    <td>No Parent</td>
+                                                                    <td>Dashboard</td>
+                                                                    <td>welcome/link_dashboard</td>
+                                                                    <td>1</td>
                                                                     <td>
                                                                         <div class="table-actions">
                                                                             
@@ -139,16 +116,27 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>201911020001</td>
-                                                                    <td>Hilman Fadillah</td>
-                                                                    <td>hilmanf11</td>
-                                                                    <td>********</td>
-                                                                    <td>Staff</td>
-                                                                    <td>Indoseiki</td>
-                                                                    <td>Aktif</td>
+                                                                    <td>10002</td>
+                                                                    <td>No Parent</td>
+                                                                    <td>Administrator</td>
+                                                                    <td></td>
+                                                                    <td>2</td>
                                                                     <td>
                                                                         <div class="table-actions">
                                                                             
+                                                                            <a href="#"><i class="ik ik-edit-2"></i></a>
+                                                                            <a href="#"><i class="ik ik-trash-2"></i></a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>100021</td>
+                                                                    <td>Administrator</td>
+                                                                    <td>Setting Menu</td>
+                                                                    <td>welcome/setting_menu</td>
+                                                                    <td>1</td>
+                                                                    <td>
+                                                                        <div class="table-actions">
                                                                             <a href="#"><i class="ik ik-edit-2"></i></a>
                                                                             <a href="#"><i class="ik ik-trash-2"></i></a>
                                                                         </div>
@@ -165,29 +153,3 @@
                             </div>
                         </div>
                     </div>
-
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript">
-    function new_user(){
-      full_name = $('#full_name').val();
-      username = $('#username').val();
-      password = $('#password').val();
-      hak_akses = $('#hak_akses').val();
-      status = $('#status').val();
-     
-      $.post('<?php echo site_url('User');?>/new_user',{ 'fullname' : full_name, 'username' : username, 'password' : password, 'hak_akses' : hak_akses, 'Status' : status},
-        function(data){ 
-        console.log(data);
-
-        if(data == 1){
-            alert('User Berhasil ditambah');
-            location.reload();
-        }else{
-            alert('User Gagal ditambah');
-            location.reload();
-
-        }
-        });
-    
-    }
-</script>

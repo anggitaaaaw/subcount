@@ -79,7 +79,7 @@
                                                                 <button type="button" class="btn btn-primary">Add Data</button>
                                                                 <button type="button" class="btn btn-primary">Save Data</button>
                                                                 <button type="button" class="btn btn-primary">View Label Batch</button>
-                                                                <button type="button" class="btn btn-primary">Print Label Batch</button>
+                                                                <button type="button" id="print_label" class="btn btn-primary">Print Label Batch</button>
                                                             </div>
                                                         </div>
                                                     </form>
