@@ -147,28 +147,5 @@
                         </div>
                     </div>
 
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript">
-    function new_user(){
-      full_name = $('#full_name').val();
-      username = $('#username').val();
-      password = $('#password').val();
-      hak_akses = $('#hak_akses').val();
-      status = $('#status').val();
-     
-      $.post('<?php echo site_url('User');?>/new_user',{ 'fullname' : full_name, 'username' : username, 'password' : password, 'hak_akses' : hak_akses, 'Status' : status},
-        function(data){ 
-        console.log(data);
-
-        if(data == 1){
-            alert('User Berhasil ditambah');
-            location.reload();
-        }else{
-            alert('User Gagal ditambah');
-            location.reload();
-
-        }
-        });
-    
-    }
-</script>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="<?php echo base_url() ?>javascript_data/master_user.js"></script>
