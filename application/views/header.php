@@ -95,12 +95,8 @@
                                     <a href="<?php echo site_url('welcome/delivery_note') ?>" class="menu-item"><i class="ik ik-file-text"></i>Delivery Note</a>
                                     <a href="<?php echo site_url('welcome/receiving_disubcount') ?>" class="menu-item"><i class="ik ik-file-text"></i>Vendor Receiving</a>
                                 </div>
-                                <div class="nav-item has-sub">
-                                    <a><i class="ik ik-file-text"></i>Vendor Delivery</a>
-                                    <div class="submenu-content">
-                                        <a href="#" class="menu-item"><i class="ik ik-printer"></i>Print Label Batch</a>
-                                        <a href="#" class="menu-item"><i class="ik ik-list"></i>Packing List</a>
-                                    </div>
+                                <div class="nav-item">
+                                    <a href="<?php echo site_url('welcome/vendor_delivery') ?>" class="menu-item"><i class="ik ik-file-text"></i>Vendor Delivery</a>
                                 </div>
                                 <div class="nav-item has-sub">
                                     <a><i class="ik ik-file-text"></i>Incoming WIP</a>
